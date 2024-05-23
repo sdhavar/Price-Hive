@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/img/Marketplacer-Intro-Explainer-Animation-Loop-Smokey-Black-540p.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    background: linear-gradient(to right, black, gray);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+header .branding {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+header .branding img {
+    margin-left: -30px;
+    width: 100px;
+}
+
+header .branding h1 {
+    margin: 0;
+    color: white;
+    font-size: 1.5em;
+    transition: all 0.5s ease;
+    text-shadow: 2px 2px #83004a, 2px 3px #4ef5d9;
+}
+
+header .branding h1:hover {
+    transform: translate(-4px, -4px);
+    text-shadow: none;
+}
+
+header form {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    padding-left: 500px;
+}
+
+header form input[type="search"] {
+    margin-left: 30%;
+    padding: 5px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+}
+
+header form button {
+    padding: 5px 15px;
+    margin-left: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #4ef5d9;
+    color: black;
+    cursor: pointer;
+}
+
+header form button:hover {
+    background-color: #83004a;
+    color: white;
+}
+
+#priceFilter, #storeFilter {
+    background-color: #83004a;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: relative;
+    left: 20px;
+    top: 10px;
+}
+
+#priceFilter:hover, #storeFilter:hover {
+    background-color: #4ef5d9;
+    color: black;
+}
+
+#emptyPlaceholder {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#priceInput {
+    width: 150px; /* Ajustar el ancho del input */
+    padding: 5px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: right;
+    margin: 0 5px;
+}
+
+.btn-container button {
+    background-color: #83004a; 
+    color: white; 
+    border: none; 
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 15px; 
+    cursor: pointer; 
+}
+
+.btn-container button:hover {
+    background-color: #4ef5d9;
+    color: black;
+}
+
+.results {
+    background-color: #83004a;
+    color: white;
+    margin: 10px auto; /* Centra horizontalmente */
+    border: 1px solid black;
+    box-shadow: 14px 5px 23px -10px rgba(0,0,0,0.72);
+    border-radius: 20px;
+    width: 400px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.results img {
+    width: 50%; 
+}
+
+.results button {
+    padding: 5px 15px;
+    margin-left: 10px;
+    font-size: 1em;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #4ef5d9;
+    color: black;
+    cursor: pointer;
+}
+
+.results button:hover {
+    background-color: #83004a;
+    color: white;
+}
+
+.storeFilter {
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.pageNavigation {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pageNavigation .page-link {
+    margin: 0 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+}
+
+.pageNavigation .page-link.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #0056b3;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.filter-container label {
+    margin: 0 10px;
+}
+
+.productList .product-item {
+    display: none; /* Initially hide all products */
+}
+
+.productList .product-item.visible {
+    display: block; /* Show products when filter matches */
+}

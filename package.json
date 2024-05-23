@@ -1,0 +1,17 @@
+{
+  "name": "pricehive",
+  "version": "1.0.0",
+  "description": "Bienvenidos a nuesrto sitio web, el cual compara los precios de los productos de diferentes mercados ubicados en la zona de Colombia.",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0",
+    "puppeteer": "^22.9.0"
+  },
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

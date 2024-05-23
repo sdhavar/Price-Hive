@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Hive</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div id="mainApp">
+        <header>
+            <div class="branding">
+                <img src="./img/icon_watermark.webp" alt="Logo" width="100" height="100">
+                <h1>Price Hive</h1>
+            </div>
+            <form action="/search" method="GET">
+                <input type="search" name="productSearch" id="productSearch" placeholder="Buscar productos">
+                <button type="submit">Buscar</button>
+            </form>
+        </header>
+        <div class="contentDisplay">
+            <div class="btn-container">
+                <button id="priceFilter">Filtrar por precio</button>
+                <button id="storeFilter">Filtrar por mercado</button>
+            </div>
+            <div class="productList">
+                <div id="emptyPlaceholder" class="emptyPlaceholder">
+                    <p><strong>No se han cargado productos</strong></p>
+                </div>
+            </div>
+            <div class="pageNavigation"></div>
+        </div>
+    </div>
+    <script src="/index.js" type="module"></script>
+</body>
+
+</html>
